@@ -1,0 +1,30 @@
+### GET - get all users
+GET http://localhost:8080/api/users/everyone
+
+### GET - get one user
+GET http://localhost:8080/api/users/get/2
+
+### POST - create user
+POST http://localhost:8080/api/users/create
+Content-Type: application/json
+
+{
+  "firstName": "Gregory",
+  "lastName": "Vicent",
+  "password": "111111",
+  "email": "gregory@gmail.com"
+}
+
+### PUT - update user
+PUT http://localhost:8080/api/users/update/2
+Content-Type: application/json
+
+{
+  "firstName": "Jon",
+  "lastName": "Doe",
+  "password": "999",
+  "email": "jon@gmail.com"
+}
+
+### DELETE - delete user
+DELETE http://localhost:8080/api/users/delete/3
